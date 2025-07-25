@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blade1</title>
+</head>
+<body style="background:black; color:white; font-family:monospace; text-align:center; padding-top:100px;">
+  <h1>Blade1</h1>
+  <p>What is sharp but silent?</p>
+  <form onsubmit="return checkAnswer();">
+    <input type="text" id="answer" placeholder="Your answer" />
+    <button type="submit">Submit</button>
+  </form>
+  <script>
+    function checkAnswer() {
+      const input = document.getElementById("answer").value.toLowerCase();
+      if (input.includes("blade")) {
+        window.location.href = "../Blade2/index.html";
+      } else {
+        alert("Try again, wanderer.");
+      }
+      return false;
+    }
+  </script>
+</body>
+</html>
