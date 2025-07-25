@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blade2</title>
+</head>
+<body style="background:black; color:white; font-family:monospace; text-align:center; padding-top:100px;">
+  <h1>Blade2</h1>
+  <p>Cut once and I divide. Cut twice and I unite.</p>
+  <form onsubmit="return checkAnswer();">
+    <input type="text" id="answer" placeholder="Your answer" />
+    <button type="submit">Submit</button>
+  </form>
+  <script>
+    function checkAnswer() {
+      const input = document.getElementById("answer").value.toLowerCase();
+      if (input.includes("scissors")) {
+        window.location.href = "../Blade3/index.html";
+      } else {
+        alert("Try again, wanderer.");
+      }
+      return false;
+    }
+  </script>
+</body>
+</html>
