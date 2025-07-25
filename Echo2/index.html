@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Echo2</title>
+</head>
+<body style="background:black; color:white; font-family:monospace; text-align:center; padding-top:100px;">
+  <h1>Echo2</h1>
+  <p>What repeats but never starts?</p>
+  <form onsubmit="return checkAnswer();">
+    <input type="text" id="answer" placeholder="Your answer" />
+    <button type="submit">Submit</button>
+  </form>
+  <script>
+    function checkAnswer() {
+      const input = document.getElementById("answer").value.toLowerCase();
+      if (input.includes("echo")) {
+        window.location.href = "../Echo2a/index.html";
+      } else {
+        alert("Try again, wanderer.");
+      }
+      return false;
+    }
+  </script>
+</body>
+</html>
