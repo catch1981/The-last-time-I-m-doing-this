@@ -8,12 +8,25 @@
       color: white;
       font-family: monospace;
       text-align: center;
-      padding-top: 100px;
+      padding-top: 30px;
+    }
+    img {
+      width: 80%;
+      max-width: 600px;
+      margin-bottom: 40px;
+      border: 2px solid #444;
+      box-shadow: 0 0 20px #00ffff33;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      letter-spacing: 2px;
     }
     .choice {
-      font-size: 24px;
-      margin: 20px;
+      font-size: 22px;
+      margin: 15px;
       cursor: pointer;
+      transition: color 0.3s ease;
     }
     .choice:hover {
       color: cyan;
@@ -21,9 +34,10 @@
   </style>
 </head>
 <body>
+  <img src="fracture-path.png" alt="Fracture Path Visual" />
   <h1>Choose your path</h1>
-  <div class="choice" onclick="window.location.href='Mirror1/index.html'">Mirror</div>
-  <div class="choice" onclick="window.location.href='Echo2/index.html'">Echo</div>
-  <div class="choice" onclick="window.location.href='Blade1/index.html'">Blade</div>
+  <div class="choice" onclick="window.location.href='Mirror1/index.html'">🪞 Mirror</div>
+  <div class="choice" onclick="window.location.href='Echo2/index.html'">🔊 Echo</div>
+  <div class="choice" onclick="window.location.href='Blade1/index.html'">⚔️ Blade</div>
 </body>
 </html>
